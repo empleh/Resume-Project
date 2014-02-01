@@ -1,4 +1,38 @@
+html{
+ font-size:10px;
+}
+
 h1{
     font-weight:bold;
     color:red;
+}
+
+#technicalSkills{
+    border-collapse:collapse;
+    font-size:10px;
+}
+
+#technicalSkills td{
+    padding:.4em;
+}
+
+.HeaderStyle{
+    background:#333;
+    color:#fff;
+    font-variant:small-caps;
+    font-size:1.5em;
+    font-weight:bold;
+    text-align:left;
+}
+
+.ItemStyle{
+    font-size:1.3em;
+    background:#fff;
+    color:#333;
+}
+
+.AlternatingItemStyle{
+    font-size:1.3em;
+    background:#bbb;
+    color:#333;
 }

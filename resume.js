@@ -12,7 +12,8 @@ function PopulateTechnicalSkills(tbl) {
         technicalSkills.sort(function(a, b){});
                              
         $.each(technicalSkills, function(index, item){
-            tableData.push("<tr>");
+            var rowStyle = (index % 2 === 0) ? "ItemStyle" : "AlternatingItemStyle";
+            tableData.push("<tr class='" + rowStyle  + "'>");
             tableData.push("<td>" + item["Skill"] + "</td>");
             tableData.push("<td>" + item["Years"] + "</td>");
             tableData.push("<td>" + item["Level"] + "</td>");
@@ -42,7 +43,6 @@ function SkillCompare(a, b){
 }
 
 function YearsCompare(a, b){
-    console.log(a);
     return a > b ? -1 : 1;
 }
 
