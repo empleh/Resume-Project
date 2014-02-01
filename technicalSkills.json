@@ -1,0 +1,12 @@
+{ "Technical Skills": [
+        {"Skill": "HTML", "Years": "4", "Level": "Advanced"}
+        , {"Skill": "CSS", "Years": "4", "Level": "Advanced"}
+        , {"Skill": "JQuery", "Years": "3", "Level": "Advanced"}
+        , {"Skill": "Visual Basic", "Years": "4", "Level": "Advanced"}
+        , {"Skill": "SQL", "Years": "4", "Level": "Advanced"}
+        , {"Skill": "IIS", "Years": "4", "Level": "Intermediate"}
+        , {"Skill": "Windows Service", "Years": "4", "Level": "Intermediate"}
+        , {"Skill": "LESS", "Years": "1", "Level": "Intermediate"}
+        , {"Skill": "Entity Framework", "Years": "2", "Level": "Advanced"}
+    ]
+}
