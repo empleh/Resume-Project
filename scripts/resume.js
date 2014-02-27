@@ -1,16 +1,19 @@
 $(document).ready(function(){init();});
 
 function init() {
+    jsonLocation = "JSONData/";
+
     PopulateTechnicalSkills($("#technicalSkills"));   
 }
 
 function PopulateTechnicalSkills(tbl) {
     var tableData = new Array();
-    $.getJSON("technicalSkills.json", function(data) {
+
+    $.getJSON(jsonLocation + "technicalSkills.json", function (data) {
         var technicalSkills = data["Technical Skills"];
         SortSkills(technicalSkills);
-        technicalSkills.sort(function(a, b){});
-                             
+        technicalSkills.sort(function (a, b) { });
+                    
         $.each(technicalSkills, function(index, item){
             var rowStyle = (index % 2 === 0) ? "ItemStyle" : "AlternatingItemStyle";
             tableData.push("<tr class='" + rowStyle  + "'>");
