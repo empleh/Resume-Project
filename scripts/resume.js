@@ -3,7 +3,18 @@ $(document).ready(function(){init();});
 function init() {
     jsonLocation = "JSONData/";
 
-    PopulateTechnicalSkills($("#technicalSkills"));   
+    PopulateTechnicalSkills($("#technicalSkills"));
+
+    CenterContent();
+    $(window).resize(function() { CenterContent(); });
+}
+
+function CenterContent() {
+    var width = $(window).width();
+    var contentWidth = $("#content").width();
+
+    var leftMargin = (width - contentWidth) / 2;
+    $("#content").css({"margin-left": leftMargin + "px"});
 }
 
 function PopulateTechnicalSkills(tbl) {

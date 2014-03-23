@@ -1,5 +1,13 @@
 html{
  font-size:10px;
+ background: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -35,4 +43,18 @@ h1{
     font-size:1.3em;
     background:#bbb;
     color:#333;
+}
+
+#content {
+    margin: 0;
+    width:800px;
+    position:absolute;
+    display:block;
+    background: #ffffff;
+}
+
+#contact {
+    float: right;
+    font-size: 1.3em;
+    padding-right: .5em;
 }
